@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{CA94F8B9-B786-4737-B21A-FD4D2AE5D9E0}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\publish.yml = ..\.github\workflows\publish.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BUTR.MessageBoxPInvoke", "BUTR.MessageBoxPInvoke\BUTR.MessageBoxPInvoke.csproj", "{AF81D675-8017-44AF-841F-74D4EC7C083B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{01752346-BD76-4EC8-93E3-CB0346325658}"
+	ProjectSection(SolutionItems) = preProject
+		BUTR.MessageBoxPInvoke.props = BUTR.MessageBoxPInvoke.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{13E34587-868E-41B5-9AAD-8CC0FF909A82}"
+	ProjectSection(SolutionItems) = preProject
+		..\build\common.props = ..\build\common.props
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF81D675-8017-44AF-841F-74D4EC7C083B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF81D675-8017-44AF-841F-74D4EC7C083B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF81D675-8017-44AF-841F-74D4EC7C083B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF81D675-8017-44AF-841F-74D4EC7C083B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AF81D675-8017-44AF-841F-74D4EC7C083B} = {01752346-BD76-4EC8-93E3-CB0346325658}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27D11FC7-55AA-470D-B2AB-255B7B1D3BDC}
+	EndGlobalSection
+EndGlobal

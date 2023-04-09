@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>BUTR.MessageBoxPInvoke</PackageId>
+    <Title>BUTR.MessageBoxPInvoke</Title>
+    <Description>Simple PInvoke wrapper for netstandard2.0.</Description>
+    <!--<DevelopmentDependency>true</DevelopmentDependency>-->
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/BUTR/BUTR.MessageBoxPInvoke</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageIconUrl>https://raw.githubusercontent.com/BUTR/BUTR.MessageBoxPInvoke/master/assets/Icon128x128.png</PackageIconUrl>
+    <PackageTags>source butr messagebox pinvoke</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageFile Include="**/*.cs" PackagePath="content\cs\$(TargetFramework)\$(ProjectName)\%(RelativeDir)%(Filename).cs" Exclude="$(BaseIntermediateOutputPath)/**/*.cs" />
+    <PackageFile Include="**/*.cs" PackagePath="contentFiles\cs\$(TargetFramework)\$(ProjectName)\%(RelativeDir)%(Filename).cs" Exclude="$(BaseIntermediateOutputPath)/**/*.cs" />
+    <PackageFile Include="../BUTR.MessageBoxPInvoke.props" PackagePath="build/BUTR.MessageBoxPInvoke.props" />
+    <PackageFile Include="../../assets/Icon128x128.png" PackagePath="icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NuGetizer" Version="0.9.1" />
+  </ItemGroup>
+
+</Project>
